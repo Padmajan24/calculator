@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="container">
+        <form action="">
+            <p>CALTRIX</p>
+
+            <input type="text" class="screen"  id="calcscreen"><br>
+            <input class="button number" type="button" value="7" onclick="displayContent('7')">
+            <input class="button number" type="button" value="8" onclick="displayContent('8')">
+
+            <input class="button number" type="button" value="9" onclick="displayContent('9')">
+
+            <input class="button number" type="button" value="/" onclick="displayContent('/')">
+            <br>
+            <input class="button number" type="button" value="4" onclick="displayContent('4')">
+            <input class="button number" type="button" value="5" onclick="displayContent('5')">
+
+            <input class="button number" type="button" value="6" onclick="displayContent('6')">
+
+            <input class="button number" type="button" value="*" onclick="displayContent('*')">
+            <br>
+            <input class="button number" type="button" value="1" onclick="displayContent('1')">
+            <input class="button number" type="button" value="2" onclick="displayContent('2')">
+
+            <input class="button number" type="button" value="3" onclick="displayContent('3')">
+
+            <input class="button number" type="button" value="+" onclick="displayContent('+')">
+            <br>
+            <input class="button clear" type="button" value="c" onclick="clearAllContent()" >
+            <input class="button number" type="button" value="0" onclick="displayContent('0')">
+
+            <input class="button result" type="button" value="=" onclick="showResult()">
+
+            <input class="button number" type="button" value="-" onclick="displayContent('-')">
+            <button id="del" class="button number" type="button" onclick="removeLast()">&#9003;></button>
+
+
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
